@@ -14,12 +14,12 @@ Age field is disabled and it will be calculated based on date of birth. However,
  
  I have used below technologies for our Api
  - .Net Core 3.1 WEB API
- -.Net Core Native DI
- -FluentValidation
- -AutoMapper
- -EntityFramework Core Code First Approach
- -Swagger UI
- -Automated Migrations
+ - .Net Core Native DI
+ - FluentValidation
+ - AutoMapper
+ - EntityFramework Core Code First Approach
+ - Swagger UI
+ - Automated Migrations
  
  
  
