@@ -140,14 +140,6 @@ C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\obj\Debug\netcoreapp3.1\PremiumCa
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\obj\Debug\netcoreapp3.1\PremiumCalcApi.dll
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\obj\Debug\netcoreapp3.1\PremiumCalcApi.pdb
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\obj\Debug\netcoreapp3.1\PremiumCalcApi.genruntimeconfig.cache
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\angular.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\e2e\tsconfig.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\package-lock.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\package.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\tsconfig.app.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\tsconfig.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\tsconfig.spec.json
-C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\PremiumCalcFrontEnd\tslint.json
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
@@ -159,3 +151,11 @@ C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\angular.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\e2e\tsconfig.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\package-lock.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\package.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\tsconfig.app.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\tsconfig.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\tsconfig.spec.json
+C:\Dev\GitHub\PremiumCalculator\PremiumCalcApi\bin\Debug\netcoreapp3.1\FrontEnd\tslint.json
