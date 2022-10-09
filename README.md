@@ -5,7 +5,7 @@ I will use Angular as  frontend and .Net Core Web API as Backend service.
 ![image](https://user-images.githubusercontent.com/115399963/194752053-f222c20b-2dd5-4db5-8c7d-7c51ff2b6961.png)
 
 # Angular Architectural Approach
-I will use Facade pattern. Benefit of using it is business logic will be implemented in Facade service so that presentation layer will not impacted when we want to switch  data fetching from Api call to Redux state.
+I will use Facade pattern. Benefit of using it that our  business logic will be implemented in Facade service so that presentation layer will not impacted when we can easily switch  data fetching logic from Api call to Redux state in case our requirement grows.
 
 Age field is disabled and it will be calculated based on date of birth. However, we have implemented validation logic on age in case if user tries to tweak it.
 
