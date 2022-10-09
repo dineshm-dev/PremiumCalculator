@@ -21,7 +21,5 @@ Age field is disabled and it will be calculated based on date of birth. However,
  - Swagger UI
  - Automated Migrations
  
- 
- 
- 
+ Kindly update sqlConnection setting in appsetting.development.json and run update-database command in package manager
 
