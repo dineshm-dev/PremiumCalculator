@@ -13,13 +13,13 @@ Age field is disabled and it will be calculated based on date of birth. However,
  I have create API using .Net core 3.1 and followed Unit Of Work pattern assuming we might add additional business logic. I have followed SOLID principles.
  
  I have used below technologies for our Api
- .Net Core 3.1 WEB API
- .Net Core Native DI
- FluentValidation
- AutoMapper
- EntityFramework Core Code First Approach
- Swagger UI
- Automated Migrations
+ -.Net Core 3.1 WEB API
+ -.Net Core Native DI
+ -FluentValidation
+ -AutoMapper
+ -EntityFramework Core Code First Approach
+ -Swagger UI
+ -Automated Migrations
  
  
  
