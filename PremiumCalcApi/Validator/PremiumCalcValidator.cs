@@ -22,10 +22,13 @@ namespace PremiumCalcApi.Validator
 
         }
 
-        protected bool BeValidAge(DateTime date)
+        protected bool BeValidAge(string date)
         {
             int currentYear = DateTime.Now.Year;
-            int dobYear = date.Year;
+            DateTime d;
+            bool validDate = DateTime.TryParse(date, out d);
+            if (!validDate) return false;
+            int dobYear = d.Year;
 
             if (dobYear < currentYear)
             {

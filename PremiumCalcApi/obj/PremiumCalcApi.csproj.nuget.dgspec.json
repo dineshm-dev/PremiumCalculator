@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Personal\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj": {}
+    "C:\\Dev\\GitHub\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Personal\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj": {
+    "C:\\Dev\\GitHub\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Personal\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj",
+        "projectUniqueName": "C:\\Dev\\GitHub\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj",
         "projectName": "PremiumCalcApi",
-        "projectPath": "C:\\Dev\\Personal\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj",
+        "projectPath": "C:\\Dev\\GitHub\\PremiumCalculator\\PremiumCalcApi\\PremiumCalcApi.csproj",
         "packagesPath": "C:\\Users\\dineshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Personal\\PremiumCalculator\\PremiumCalcApi\\obj\\",
+        "outputPath": "C:\\Dev\\GitHub\\PremiumCalculator\\PremiumCalcApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -50,6 +50,14 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.SpaServices": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.29, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
