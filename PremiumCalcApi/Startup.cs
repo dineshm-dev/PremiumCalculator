@@ -54,7 +54,7 @@ namespace PremiumCalcApi
 
             services.AddCors(options =>
             {
-                options.AddPolicy(name: "FrontEndPolicy",
+                options.AddPolicy(name: "FrontEnd",
                     builder =>
                     {
                         builder.WithOrigins(Configuration.GetSection("AppSettings:FrontEndUrl").Value)
@@ -116,7 +116,7 @@ namespace PremiumCalcApi
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "PremiumCalcFrontEnd";
+                spa.Options.SourcePath = "FrontEnd";
 
                 if (env.IsDevelopment())
                 {
