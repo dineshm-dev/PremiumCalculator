@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PremiumCalcApi", "PremiumCalcApi.csproj", "{EEE7D0E3-1819-421F-B12F-66D5C81D208F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PremiumCalcWeb", "..\PremiumCalcWeb\PremiumCalcWeb.csproj", "{5B132C76-5815-41F4-BDC4-8BB965E6D4C5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{EEE7D0E3-1819-421F-B12F-66D5C81D208F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEE7D0E3-1819-421F-B12F-66D5C81D208F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEE7D0E3-1819-421F-B12F-66D5C81D208F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B132C76-5815-41F4-BDC4-8BB965E6D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B132C76-5815-41F4-BDC4-8BB965E6D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B132C76-5815-41F4-BDC4-8BB965E6D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B132C76-5815-41F4-BDC4-8BB965E6D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
