@@ -12,6 +12,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using PremiumCalcApi.Common;
@@ -45,16 +46,21 @@ namespace PremiumCalcApi
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
-            // services.AddDbContext<InsurancePremiumContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AppSettings:SqlConnection")));
-
-
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IPremiumCalcuatorService, PremiumCalcuatorService>();
             services.AddTransient<IOccupationService, OccupationService>();
 
             services.AddScoped<IValidator<PremiumCalculator>, PremiumCalcValidator>();
-           
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "FrontEndPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins(Configuration.GetSection("AppSettings:FrontEndUrl").Value)
+                            .AllowAnyHeader().AllowAnyMethod();
+                    });
+            });
             services.AddControllers();
 
             services.AddSwaggerGen();
@@ -68,6 +74,11 @@ namespace PremiumCalcApi
                 });
             });
 
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "PremiumCalcFrontEnd/dist";
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,7 +89,11 @@ namespace PremiumCalcApi
                 app.UseDeveloperExceptionPage();
             }
 
+           
+
             app.UseHttpsRedirection();
+
+            app.UseCors("FrontEndPolicy");
 
             app.UseRouting();
 
@@ -94,6 +109,21 @@ namespace PremiumCalcApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSpa(spa =>
+            {
+                // To learn more about options for serving an Angular SPA from ASP.NET Core,
+                // see https://go.microsoft.com/fwlink/?linkid=864501
+
+                spa.Options.SourcePath = "PremiumCalcFrontEnd";
+
+                if (env.IsDevelopment())
+                {
+                    //spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+
+                }
             });
         }
     }
