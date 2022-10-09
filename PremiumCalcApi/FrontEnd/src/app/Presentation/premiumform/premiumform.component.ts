@@ -26,6 +26,7 @@ export class PremiumformComponent implements OnInit {
   calculatedamount : number = 0;
   invalidAgeRange: boolean;
   loader = false;
+  inavlidOccupation = false;
 
   constructor(private _fb: FormBuilder, 
     private customValidator: CustomvalidationService,
@@ -93,9 +94,15 @@ export class PremiumformComponent implements OnInit {
 
   OnOccupationSelected(value){
     this.premiumCalcForm.controls.occupationId.setValue(value);
-    if(this.premiumCalcForm.valid && value != "-1"){
+    this.inavlidOccupation = false;
+    if(value != "-1"){
       console.log(value);
+      if(this.premiumCalcForm.valid)
       this.onSubmit();
+    }
+    else{
+      this.inavlidOccupation = true;
+      this.calculatedamount = 0;
     }
   }
 
