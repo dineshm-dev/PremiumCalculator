@@ -2,8 +2,7 @@
 
 This application is used to calculate premiums based on person's occupation and insured amount.
 I will use Angular as  frontend and .Net Core Web API as Backend service.
-
-![image](https://user-images.githubusercontent.com/115399963/194751620-344b19f0-7560-4609-8143-9b2d1d9d635b.png)
+![image](https://user-images.githubusercontent.com/115399963/194752053-f222c20b-2dd5-4db5-8c7d-7c51ff2b6961.png)
 
 Angular Architectural Approach
 I will use Facade pattern. Benefit of using it is business logic will be implemented in Facade service so that presentation layer will not impacted when we want to switch  data fetching from Api call to Redux state.
