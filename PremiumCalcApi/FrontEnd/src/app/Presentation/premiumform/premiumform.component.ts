@@ -76,7 +76,7 @@ export class PremiumformComponent implements OnInit {
           dateOfBirth : obj.dateofbirth.toString(), 
           deathSumInsured : Number.parseFloat(obj.deathsumInsured)
       };
-     
+
       this.loader = true;
       this.premiumCalcService.calculatePremium(objpremimCalc).subscribe(
         (data)=> {this.loader = false;this.calculatedamount = data},
