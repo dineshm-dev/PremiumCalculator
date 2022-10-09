@@ -1,0 +1,163 @@
+
+<div id="container" class="container">
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 text-center">
+            <h1 class="display-3">Welcome to Bootstrap 4</h1>
+            <div class="info-form">
+                <form action="" class="form-inline justify-content-center">
+                    <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <input type="text" class="form-control" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input type="text" class="form-control" placeholder="jane.doe@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary ">Calculate Premium</button>
+                </form>
+            </div>
+            <br>
+  
+            <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">↓</a>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-xs-3">
+            <label for="class_type"><h2><span class=" label label-primary">Class Type</span></h2></label>
+        </div>
+        <div class="col-xs-2">
+            <select name="class_type" id="class_type" class="  form-control input-lg" style="width:200px" autocomplete="off">
+                <option >Economy</option>
+                <option >Premium Economy</option>
+                <option >Club World</option>
+                <option >First Class</option>
+            </select>
+        </div>
+    </div>
+    </div>
+  
+  <div id="container" class="container">
+    <div class="row">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="inputType" class="col-sm-2 control-label">Label</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="input" placeholder="Input text">
+            </div>
+        </div>
+    </form>
+    </div>
+  
+    
+      
+  
+  </div>
+  
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </div>
+    </div>
+  </form>
+  
+
+  <div>Working below</div>
+
+  
+<div id="container" class="container">
+    <div class="col-sm-10 offset-sm-1 text-center">
+      <h1>{{this.title}}</h1>
+  <form [formGroup]="premiumCalcForm" >
+    <div class="form-group row marginbottom">
+      <label  class="col-sm-3 col-form-label">Name</label>
+      <div class="col-sm-6">
+        <input  type="text" class="form-control" formControlName="name"  id="inputName" >
+        <mat-error *ngIf="formErrors.name">{{formErrors.name}}</mat-error>
+        <!-- <span class="text-danger"
+                                  *ngIf="premiumCalcForm.name.errors?.required">
+                                  Name is required
+                              </span> -->
+  
+      </div>
+      
+    </div>
+    <div class="form-group row marginbottom" >
+      <label  class="col-sm-3 col-form-label">Age</label>
+      <div class="col-sm-6">
+        <input  type="text" class="form-control" id="inputAge" formControlName="age">
+        <mat-error *ngIf="formErrors.age"> {{formErrors.age}}</mat-error>
+        
+      </div>
+      
+    </div>
+  
+    
+    <div class="form-group row marginbottom" >
+      <label  class="col-sm-3 col-form-label">Occupation</label>
+      <div class="col-sm-6">
+    <select class="form-select" formControlName="occupations" (change)="OnPageSelected($event.target.value)"
+        aria-label="Default select example">
+        <option >Choose your occupation</option>
+        <option *ngFor="let orgname of occupationList">
+          {{orgname.displayText}}
+        </option>    
+    </select>
+    </div>
+    <div *ngIf="formErrors.occupations" class="error">
+      Occupation is required.
+    </div>
+    
+    </div>
+  
+    <div class="form-group row marginbottom" >
+      <label  class="col-sm-3 col-form-label">Date of Birth</label>
+      <div class="col-sm-6">
+        <input  type="date" class="form-control" id="inputbirthDate" formControlName="birthDate">
+        <mat-error *ngIf="formErrors.birthDate"> {{formErrors.birthDate}}</mat-error>
+      </div>
+    </div>
+    
+    <div class="form-group row marginbottom">
+      <label  class="col-sm-3 col-form-label">Death - Sum Insured</label>
+      <div class="col-sm-6">
+        <input  type="text" class="form-control" formControlName="insuredamount"  id="insuredamount" >
+        <mat-error *ngIf="formErrors.insuredamount">{{formErrors.insuredamount}}</mat-error>
+      </div>
+      
+    </div>
+  
+    <div class="form-group row marginbottom" >
+      <div class="col-sm-6">
+        <button type="submit" (click)="calculatePremium()" class="btn btn-primary">Calculate Premium</button>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>
