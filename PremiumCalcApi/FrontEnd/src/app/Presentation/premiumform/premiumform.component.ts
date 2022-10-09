@@ -32,9 +32,10 @@ export class PremiumformComponent implements OnInit {
 
   ngOnInit() {
 
-     
+     this.loader = true;
      this.occupationService.getOccupationDetails().subscribe(
-      (data) => {  this.loader = false; return this.occupationList = data;}
+      (data) => {  this.loader = false; return this.occupationList = data;},
+      (error) => { this.loader = false;}
      )
 
     // this.occupationList = [ { value : "1", displayText:"Cleaner" },  { value : "2", displayText:"Doctor" },  
