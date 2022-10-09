@@ -21,6 +21,7 @@ namespace PremiumCalcApi.Models
         public InsurancePremiumContext(DbContextOptions<InsurancePremiumContext> options)
             : base(options)
         {
+            
         }
 
         public virtual DbSet<Factor> Factors { get; set; }
