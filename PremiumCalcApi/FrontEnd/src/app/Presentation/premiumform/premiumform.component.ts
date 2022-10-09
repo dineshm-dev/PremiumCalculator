@@ -5,6 +5,8 @@ import * as internal from 'assert';
 import { CustomvalidationService } from 'src/app/Common/Validators/CustomValidators';
 import { OccupationService } from 'src/app/Core/OccupationService';
 import { PremiumCalcService } from 'src/app/Core/PremiumCalcService';
+import { IOccupationFacade } from 'src/app/Facade/IOccupationFacade';
+import { IPremiumCalcFacade } from 'src/app/Facade/IPremiumCalcFacade';
 import { Occupation } from 'src/app/Models/Occupation';
 import { PremiumCalculator } from 'src/app/Models/PremiumCalculator';
 
@@ -27,8 +29,8 @@ export class PremiumformComponent implements OnInit {
 
   constructor(private _fb: FormBuilder, 
     private customValidator: CustomvalidationService,
-    private occupationService:OccupationService,
-    private premiumCalcService: PremiumCalcService){}
+    private occupationService:IOccupationFacade,
+    private premiumCalcService: IPremiumCalcFacade){}
 
   ngOnInit() {
 
