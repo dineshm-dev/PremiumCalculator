@@ -15,6 +15,11 @@
                     <h3>Calculate Premium</h3>
                 </div>
                 <div class="card-body">
+                    <div *ngIf="this.error.length > 0" class="alert alert-danger alert-dismissible fade show">
+                        {{this.error}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    
                     <form class="form" [formGroup]="premiumCalcForm" (ngSubmit)="onSubmit()">
                         <div class="form-group">
                             <label>Name<span class="required">*</span></label>

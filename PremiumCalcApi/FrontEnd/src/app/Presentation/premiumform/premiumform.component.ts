@@ -27,6 +27,7 @@ export class PremiumformComponent implements OnInit {
   invalidAgeRange: boolean;
   loader = false;
   inavlidOccupation = false;
+  error : string = "";
 
   constructor(private _fb: FormBuilder, 
     private customValidator: CustomvalidationService,
@@ -67,6 +68,7 @@ export class PremiumformComponent implements OnInit {
   }
 
   onSubmit() {
+    this.error = "";
     this.submitted = true;
 
 
@@ -84,7 +86,7 @@ export class PremiumformComponent implements OnInit {
       this.loader = true;
       this.premiumCalcService.calculatePremium(objpremimCalc).subscribe(
         (data)=> {this.loader = false;this.calculatedamount = data},
-        (error) => {this.loader = false;}
+        (error) => {this.loader = false; this.error = error;}
       )
 
       return false;

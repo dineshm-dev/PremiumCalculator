@@ -12,12 +12,13 @@ namespace PremiumCalcApi.Validator
     {
         public PremiumCalcValidator()
         {
-            RuleFor(x => x.Name).NotNull().WithMessage("Age is required");
-            RuleFor(x => x.DeathSumInsured).NotNull().WithMessage("DeathSumInsured is required");
-            RuleFor(x => x.DateOfBirth).NotNull().WithMessage("DateOfBirth is required");
+            RuleFor(x => x.Name).NotNull().WithMessage("Name is required");
+            RuleFor(x => x.DeathSumInsured).NotNull().WithMessage("Death-Sum Insured amount is required");
+            RuleFor(x => x.DateOfBirth).NotNull().WithMessage("Date Of Birth is required");
             RuleFor(x => x.DateOfBirth).Must(BeValidAge).WithMessage("Age must be greater than 18 years and less tha 60 years." +
                                                                      "Please enter Date Of Birth accordingly.");
             RuleFor(x => x.Age).NotNull().WithMessage("Age is required");
+            
             RuleFor(x => x.OccupationId).NotNull().WithMessage("OccupationId is required");
 
         }
