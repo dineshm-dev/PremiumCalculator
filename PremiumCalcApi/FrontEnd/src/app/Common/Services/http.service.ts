@@ -61,13 +61,26 @@ export class HttpService implements HttpInterceptor {
 		let errMsg: string;
 		if (errorResponse instanceof HttpErrorResponse) {
 			const err = errorResponse.message || JSON.stringify(errorResponse.error);
-			errMsg = `${errorResponse.status} - ${errorResponse.statusText || ''} Details: ${err}`;
+            let detailmsg:string = "";
+			if(errorResponse.error && JSON.parse(errorResponse.error.detail)){
+				if(JSON.parse(errorResponse.error.detail).length > 0){
+					JSON.parse(errorResponse.error.detail).forEach(element => {
+						detailmsg = detailmsg + element;
+					});
+				}
+			}
+			if(detailmsg != ""){
+				errMsg = `${detailmsg || ''}`;
+			}
+            else{
+			errMsg = `${errorResponse.status} - ${detailmsg || ''} Details: ${err}`;
 			console.log(errMsg);
+			}
 		} else {
 			errMsg = errorResponse.message ? errorResponse.message : errorResponse.toString();
 			console.log(errMsg);
 		}
 
-		return _throw('Deliberate 404');
+		return _throw(errMsg);
 	}
 }
