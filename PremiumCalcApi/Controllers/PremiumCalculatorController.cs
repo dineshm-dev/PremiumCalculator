@@ -34,7 +34,7 @@ namespace PremiumCalcApi.Controllers
                 ValidationResult result = await _validator.ValidateAsync(objPremiumCalculator);
                 if (!result.IsValid)
                 {
-                    return Problem(JsonConvert.SerializeObject(result.Errors));
+                    return Problem(JsonConvert.SerializeObject(result.Errors.Select(f => f.ErrorMessage)));
                 }
 
 
